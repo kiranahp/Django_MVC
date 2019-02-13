@@ -1,0 +1,129 @@
+{%load static%}
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet" >
+    <link href="{% static 'css/home.css' %}" rel="stylesheet" >
+    <title>Mentee | Alpha Tech</title>
+</head>
+
+<body>
+    <navbar>
+        <div class="navbarUtama" style="margin-top: 10px;">
+            <div class="container-fluid">
+                <div>
+                    <div class="row">
+                        <div class="col-6">
+                            Alpha Tech Academy
+                        </div>
+                        <div class="col-6">
+                            <ul>
+                                <li><a href="{% url 'home' %}" class="currentLink" style="text-decoration:none">Home</a></li>
+                                <li><a href="{% url 'blog' %}" style="text-decoration:none">Blog</a></li>
+                                <li><a href="{% url 'mentor' %}" style="text-decoration:none">Mentor</a></li>
+                                <li><a href="{% url 'mentee' %}" style="text-decoration:none">Mentee</a></li>
+                                <li><a href="{% url 'author' %}" style="text-decoration:none">Author</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </navbar>
+    
+    <div class="Jumbotron-Utama" style="color:white">
+        <div class="jumbotron jumbotron-main" style="background-color: #00cad1;">
+            <div class="container animated flipInX delay">
+                <center>
+                    <div>
+                        <img src="{% static 'pict/alpha-logo.png' %}" alt="">
+                    </div>
+                    <div class="font-jumbotron">
+                        <div>
+                            <h1 class="h1editor">Alpha Tech Academy</h1>
+                        </div>
+                        <div>
+                            <h5 style="padding-left: 70px;
+                            padding-right: 70px;">
+                                Alpha Tech Academy is a tech talent incubator that gives 
+                                everyone (even non IT background) a chance to be a professional 
+                                Tech Talent within 3 months. Contact Person: Email : academy@alphatech.id
+                                mobile phone: 0877 9609 9530                                  
+                            </h5>
+                        </div>
+                    </div>
+                </center>
+            </div>
+        </div>
+    </div>
+    <section style="margin-bottom: 100px;">
+        <div>
+            <h3 style="text-align: center; margin-bottom: 25px;">Our Mentee</h3>     
+        </div>
+        <div class="container-fluid">
+            <div class="row isimente">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div>
+                        <img class="potomen" src="{% static 'pict/Deepin-Screenshot-select-area-20181009100635.png' %}" alt="">
+                    </div>
+                </div>
+                <divc lass="col-md-4 col-sm-6 col-12">
+                    <div>
+                        <div class="mentes"><h5>Steve Jobs</h5></div>
+                        <p>"I learnn so much from Alpha Tech"</p>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row isimente">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div>
+                        <img class="potomen" src="{% static 'pict/Deepin-Screenshot-select-area-20181009100646.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div>
+                        <div class="mentes"><h5>Larry Page</h5></div>
+                        <p>"Great place to learn about programming"</p>
+                    </div>
+                </div>
+            </div>
+            <br/>
+            <div class="row isimente">
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div>
+                        <img class="potomen" src="{% static 'pict/Deepin-Screenshot-select-area-20181009100620.png' %}" alt="">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-12">
+                    <div>
+                        <div class="mentes"><h5>Mark Zuckenberg</h5></div>
+                        <p>"The best place of who want to be a great IT talent"</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+    <footer>
+        <div class="logo">
+            <span style="padding-right: 10px">Our Products: </span>
+            <img class="logogrey" src="{% static 'pict/logo-grey-alphapay.png' %}" alt="">
+            <img class="logogrey" src="{% static 'pict/logo-grey-sepulsa.png' %}" alt="">
+            <img class="logogrey" src="{% static 'pict/logo-grey-alphabill.png' %}" alt="">
+        </div>
+        <div class="cp">
+            <span>
+                Contact Person: Mobile phone: 0877 9609 9530
+                Email : academy@alphatech.id
+            </span>     
+        </div>
+    </footer>
+
+</html>
+
+

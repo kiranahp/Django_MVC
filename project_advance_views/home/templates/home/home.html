@@ -1,0 +1,88 @@
+{% extends 'home/base.html' %}
+{%load static%}
+
+{% block head %}
+    <title>Home | Alpha Tech</title>
+{% endblock %}
+
+{% block content%}
+<section class="whatyuget">
+        <div class="container">
+            <div class="row">
+                <div class="span4">
+                    <img style="margin-right: 175px" class="img-left imgh" src="{% static 'pict/benefit.png' %}" alt="">
+                    <div class="content-heading"><h3>Learn awesome tech</h3></div>
+                    <p>You will learn about programming language, such as Python and Javascript, build back-end apps using
+                        Flask framework with microservice concept, build client-site apps using React Library, etc.</p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="span4">
+                    <img style="margin-right: 185px" class="img-left imgh" src="{% static 'pict/search-job.png' %}" alt="">
+                    <div class="content-heading"><h3>Land new job</h3></div>
+                    <p>If you can pass this awesome program, you will be part of our reliable tech team for especially Software
+                        Engineer position and other tech position such as Quality Engineer, System Analyst, etc.</p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="span4">
+                    <img style="margin-right: 185px" class="img-left imgh" src="{% static 'pict/get-paid.png' %}" alt="">
+                    <div class="content-heading"><h3>Get paid to learn</h3></div>
+                    <p>Join for free and earn some money. Yes you read that right, no registration fee required to enter this 
+                        program. To make things even better, you will receive pocket money just for participating. Cool, right?</p>
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                <div class="span4">
+                    <img class="img-left imgh" src="{% static 'pict/mission.png' %}" alt="">
+                    <div class="content-heading"><h3>Who are we?</h3></div>
+                    <p>Alpha Tech Academy is a tech talent incubation that gives anyone any chance (not even an IT background) 
+                        to learn within 3 months of being a professional Tech Talent. What is our mission? We want to improve capability Tech Talent in Indonesia</p>
+                    <div class="content-heading"><h3>What is our mission?</h3></div>
+                    <p>We want to improve capability Tech Talent in Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="whatyulearn">
+        <div>
+            <h3 class="learn">What will you learn?</h3>     
+        </div>
+        <div class="container-fluid">
+            <div class="row justify-content-center imageslearn">
+                <div class="col-sm-12 col-lg-3 col-md-6 border"  style="right: 10px;
+                bottom: 20px;">
+                    <img src="{% static 'pict/learn-html.png' %}" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-6 border" style="left: 10px;
+                bottom: 20px;">
+                    <img src="{% static 'pict/learn-programming.png' %}" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-6 border"  style="right: 10px;
+                bottom: 20px;">
+                    <img src="{% static 'pict/learn-git.png' %}" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-6 border" style="left: 10px;
+                bottom: 20px;">
+                    <img src="{% static 'pict/learn-api.png' %}" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-6 border"  style="right: 10px">
+                    <img src="{% static 'pict/learn-react.png' %}" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-6 border" style="left: 10px">
+                    <img src="{% static 'pict/learn-tdd.png' %}" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-6 border"  style="right: 10px">
+                    <img src="{% static 'pict/learn-server.png' %}" alt="">
+                </div>
+                <div class="col-sm-12 col-lg-3 col-md-6 border"  style="left: 10px">
+                    <img src="{% static 'pict/learn-scrum.png' %}" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

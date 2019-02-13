@@ -1,0 +1,31 @@
+{% extends 'home/base.html' %}
+{%load static%}
+
+{% block head %}
+    <title>Mentee| Alpha Tech</title>
+{% endblock %}
+
+{% block content%}
+<section style="margin-bottom: 100px;">
+    <div>
+        <h3 style="text-align: center; margin-bottom: 25px;">Our Mentee</h3>     
+    </div>
+    <div class="container-fluid">
+        {%for data in mentees %}
+        <div class="row isimente">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div>
+                    <img class="potomen" src="{{data.foto_mentee.url}}" alt="">
+                </div>
+            </div>
+            <divc lass="col-md-4 col-sm-6 col-12">
+                <div>
+                    <div class="mentes"><h5>{{data.nama_mentee}}</h5></div>
+                    <p>{{data.quotes_mentee}}"</p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        {% endfor %}
+</section>
+{% endblock %}

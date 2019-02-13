@@ -1,0 +1,53 @@
+{% extends 'home/base.html' %}
+{%load static%}
+
+{% block head %}
+    <title>Author| Alpha Tech</title>
+{% endblock %}
+
+{% block content%}
+<section class="authorr">
+    <div class="container-fluid">
+        <img style="margin-right: 175px" class="img-left" src="{% static 'pict/profile-pic2.jpg' %}" alt="">
+        <div class="contentauth">
+            <h4>Kirana Haditia</h4>
+            <p><span style="font-weight: bold">Kirana Haditia</span>
+            I am from Jakarta, born in 1996.</p>
+        </div>
+        <table class="tableauth" style="widows: 1000px;">
+            <tr>
+                <td>Alamat</td>
+                <td>: Jl. Mandalawangi No.14</td>
+            </tr>
+            <tr>
+                <td>Telepon</td>
+                <td>: 085781973176</td>
+            </tr>
+            <tr>
+                <td>Education</td>
+                <td>: Bachelor of Oceanography</td>
+            </tr>
+            <tr>
+                <td>Proffesion</td>
+                <td>: ATA trainee</td>
+            </tr>
+            <tr>
+                <td>Natinality</td>
+                <td>: Indonesian</td>
+            </tr>
+            <tr>
+                <td>Company</td>
+                <td>: Alphatech</td>
+            </tr>
+            <tr>
+                <td>Email Adress</td>
+                <td>: kirana@alphatech.id</td>
+            </tr>
+        </table>
+    </div>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.319872350177!2d112.60992164979214!3d-7.965857181570798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e788286ee88b45f%3A0xc50024a5bd3c458e!2sJl.+Mandalawangi+No.14%2C+Karangbesuki%2C+Sukun%2C+Kota+Malang%2C+Jawa+Timur+65149!5e0!3m2!1sen!2sid!4v1550002376708" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+</section>
+{% endblock %}

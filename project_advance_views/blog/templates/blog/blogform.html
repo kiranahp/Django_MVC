@@ -1,0 +1,15 @@
+{% extends 'home/base.html' %}
+{%load static%}
+
+{% block head %}
+    <title>Blog | Alpha Tech</title>
+{% endblock %}
+
+{% block content%}
+<h2>New Post Blog</h2>
+<form method="POST" class="post-forms">{% csrf_token%}
+    {{form.as_p}}
+    <button type="submit" class="save btn-default">save</button>
+</form>
+
+{% endblock %}

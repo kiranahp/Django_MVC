@@ -1,0 +1,85 @@
+/* home */
+ul {
+    float: right;
+    list-style: none;
+    text-align: center;
+}
+
+li {display: inline-block;
+    padding-right: 20px;}
+
+a {margin-right: 10%;
+    color: black;
+    text-decoration: none}
+
+h6 ul li {
+    display:inline-block;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    vertical-align:top;
+    position: fixed;}
+
+.logo {background-color:#00cad1;
+    text-align: center;
+    padding-bottom: 5px;
+    padding-top: 10px;}
+
+.logogrey { padding-right: 10px}
+
+.cp {padding-top: 0px; padding-bottom: 0px;
+    background-color: black; color: white;
+    text-align: center; padding-top: 5px;
+    padding-bottom: 5px;}
+
+.span4 imgh {
+    margin-right: 10px;
+}
+.span4 .img-left {
+    float: left;}
+
+.learn {text-align: center;
+    margin-top: 75px;
+    margin-bottom: 40px;}
+
+.imageslearn {margin-left: 60px;
+    margin-bottom: 50px;
+    margin-right: 60px;}
+
+.border {
+    text-align: center;
+    padding-right: 0px;
+    padding-left: 0px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    }
+
+/* blog */
+.post{padding-left: 300px}
+
+.tanggal {
+    margin-left: 300px;}
+
+.post1 {margin-left: 300px;
+    margin-right: 300px;
+    margin-bottom: 50px;}
+
+/* mentor */
+.isian {margin-left: 100px;}
+.parag{margin-right: -50px;}
+.content-heading {color: gray;}
+.exper{font-weight: bold;}
+
+/* mentee */
+.potomen {width: 60%;}
+.isimente {margin-left: 100px;
+    margin-right: 100px;}
+
+/* author */
+.authorr {margin-left: 250px;
+    margin-bottom: 10px;}
+
+.contentauth {padding-top: 20px;}
+
+.tableauth {margin-bottom: 10px;}
+td {min-width: 120px}

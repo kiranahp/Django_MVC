@@ -1,0 +1,32 @@
+{% extends 'home/base.html' %}
+{%load static%}
+
+{% block head %}
+    <title>Mentor| Alpha Tech</title>
+{% endblock %}
+
+{% block content%}
+<section style="margin-bottom: 50px;">
+    <div>
+        <h3 style="text-align: center; margin-bottom: 25px;">Our Mentor</h3>     
+    </div>
+    {% for data in mentors %}
+    <div class="container-fluid isian">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-12">
+                <div>
+                    <img src= "{{data.foto_mentor.url}}" alt="">   
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-12 parag">
+                <div>
+                    <div class="content-heading"><h5>{{data.nama_mentor}}</h5></div>
+                    <h6 class="exper">{{data.profession_mentor}})</h6>
+                    <p>{{data.quotes_mentor}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+        <br/>
+    {% endfor%}
+{% endblock %}

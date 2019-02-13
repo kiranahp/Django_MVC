@@ -1,0 +1,33 @@
+{% extends 'home/base.html' %}
+{%load static%}
+
+{% block head %}
+    <title>Blog | Alpha Tech</title>
+{% endblock %}
+
+{% block content%}
+<section class="dispblog">
+    <div class="container-fluid">
+        {% for data in blogs %}
+        <div class="row">         
+            <div class="post">
+                <img class="pictblog" src="{{data.foto_blog.url}}" alt="">
+            </div>
+        </div>
+        <div class="row tanggal">
+            <div class="col-6">
+                <span>{{data.tanggal_blog}}</span>
+            </div>
+            <div class="col-6">
+                <span>{{data.comment_blog}}</span>
+            </div>
+        </div>
+        <div class= "row post1">
+            <h1>{{data.nama_blog}}</h1>
+            <p> {{data.cerita_blog}} 
+            </p>
+            <a href="#" class="currentLink" style="text-decoration:none">Baca Selengkapnya</a>
+        </div>
+        {% endfor %}
+</section>
+{% endblock %}

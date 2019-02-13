@@ -1,0 +1,19 @@
+{% extends 'home/base.html' %}
+{%load static%}
+
+{% block head %}
+    <title>Mentor| Alpha Tech</title>
+{% endblock %}
+
+{% block content%}
+{%for data in binatangs%}
+    <div class="row">
+        <div class="col-md-8 text center">
+            <h3>{{data.nama}}</h3><br>
+                <small> Spesies: {{data.species}}</small><br>
+                <small> Berat: {{data.berat}}</small><br>
+                <small> Umur: {{data.umur}}</small><br>
+        </div>
+    </div>
+{% endfor%}
+{% endblock %}
